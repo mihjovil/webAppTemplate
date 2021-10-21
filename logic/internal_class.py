@@ -4,4 +4,4 @@ class ExampleClass:
     name = None
 
     def __init__(self):
-        self.name = 'example'
+        self.name = 'Name of example'
