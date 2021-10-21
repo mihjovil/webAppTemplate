@@ -7,7 +7,8 @@ def create_app():
 
     @app.route('/')
     def hello_world():
-        internal = internal_class()
+        # This was done to show how to send python objects to the jinja templates.
+        internal = internal_class.ExampleClass()
         return render_template('index.html', name=internal.name)
 
     if __name__ == '__main__':
